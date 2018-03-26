@@ -1,0 +1,62 @@
+.container{
+     padding-top: 50px;
+}
+
+.nav-center{
+     display: flex;
+     justify-content: center;
+}
+
+.nav-pills li{
+     text-align: center;
+     font-weight: bold;
+}
+
+.panel-heading{
+     text-align: center;
+     font-weight: bold;
+     font-size: 1.5em;
+}
+
+#invalidAjax{
+     margin-top: 150px;
+     display: none;
+}
+
+#myFeed{
+     margin-top: 50px;
+}
+
+#myProfile{
+     display: none;
+}
+
+.posts{
+     margin: 1%;
+}
+
+#profilePic{
+     text-align: right;
+}
+
+#personalDetails{
+     margin-top: 50px;
+}
+
+.text-heading{
+     text-align: center;
+     font-weight: bold;
+     font-size: 15px;
+}
+
+#graduation{
+     margin: 10px 10px;
+}
+
+#college{
+     margin: 10px 10px;
+}
+
+#school{
+     margin: 10px 10px;
+}

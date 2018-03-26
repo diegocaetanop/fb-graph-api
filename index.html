@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <title>Facebook Details</title>
+     <meta charset = "utf-8">
+     <meta name = "viewport" content = "width = device-width, initial-scale = 1">
+
+     <!-- Latest compiled and minified CSS -->
+     <link href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel = "stylesheet" >
+
+     <!-- Custom CSS -->
+     <link href = "fbdetails.css" rel = "stylesheet">
+
+     <!-- FontAwesome -->
+     <script src="https://use.fontawesome.com/52f1c743a6.js"></script>
+
+</head>
+<body>
+     <div class = "container">
+
+	    <!-- Switching Feed and Profile -->
+	    <div class = "row">
+		   <ul class="nav nav-pills nav-center">
+			  <li class="active"><a href="#" id = "feed">My Feed</a></li>
+			  <li><a href="#" id = "profile">My Profile</a></li>
+		   </ul>
+	    </div>
+
+	    <!-- Invalid AJAX Request message -->
+	    <div class = "panel panel-danger" id = "invalidAjax">
+		   <div class = "panel-heading" id = "invalid"></div>
+	    </div>
+
+	    <!-- My Feed Section -->
+	    <section id = "myFeed"></section>
+
+	    <!-- My Profile Section -->
+	    <section id = "myProfile">
+
+		   <!-- Personal Details -->
+		   <div class = "panel panel-primary" id = "personalDetails">
+			  <div class = "panel-heading">Personal Details</div><br>
+			  <div class = "row">
+
+				 <!-- Left SIde -->
+				 <div class = "col-md-6 col-sm-12 col-xs-12">
+					<div class = "row">
+					     <div class = "col-md-6 col-sm-6 col-xs-4 text-heading">Name: </div>
+					     <div class = "col-md-6 col-sm-6 col-xs-8" id = "name"></div>
+					</div><br>
+					<div class = "row">
+					     <div class = "col-md-6 col-sm-6 col-xs-4 text-heading">Date Of Birth: </div>
+					     <div class = "col-md-6 col-sm-6 col-xs-8" id = "birthday"></div>
+					</div><br>
+					<div class = "row">
+					     <div class = "col-md-6 col-sm-6 col-xs-4 text-heading">Gender: </div>
+					     <div class = "col-md-6 col-sm-6 col-xs-8" id = "gender"></div>
+					</div><br>
+				 </div>
+
+				 <!-- Right Side -->
+				 <div class = "col-md-6 col-sm-12 col-xs-12">
+					<div class = "row">
+					     <div class = "col-md-6 col-sm-6 col-xs-4 text-heading">E-mail id: </div>
+					     <div class = "col-md-6 col-sm-6 col-xs-8" id = "email"></div>
+					</div><br>
+					<div class = "row">
+					     <div class = "col-md-6 col-sm-6 col-xs-4 text-heading">Home Town: </div>
+					     <div class = "col-md-6 col-sm-6 col-xs-8" id = "hometown"></div>
+					</div><br>
+					<div class = "row">
+					     <div class = "col-md-6 col-sm-6 col-xs-4 text-heading">Location: </div>
+					     <div class = "col-md-6 col-sm-6 col-xs-8" id = "location"></div>
+					</div><br>
+				 </div>
+			  </div>
+		   </div>
+
+		   <!-- Education Details -->
+		   <div class = "panel panel-primary" id = "academicDetails">
+			  <div class = "panel-heading">Academic Details</div>
+
+				 <!-- Graduation -->
+				 <div class = "panel panel-success" id = "graduation">
+					<div class = "panel-heading">Graduation</div><br>
+					<div class = "panel-body">
+					     <div class = "row">
+						    <div class = "col-md-6 col-sm-12 col-xs-12">
+							   <div class = "row">
+								  <div class = "col-md-6 col-sm-6 col-xs-5 text-heading">Name: </div>
+								  <div class = "col-md-6 col-sm-6 col-xs-7" id = "gname"></div>
+							   </div><br>
+							   <div class = "row">
+								  <div class = "col-md-6 col-sm-6 col-xs-5 text-heading">Degree: </div>
+								  <div class = "col-md-6 col-sm-6 col-xs-7" id = "gdegree"></div>
+							   </div><br>
+						    </div>
+						    <div class = "col-md-6 col-sm-12 col-xs-12">
+							   <div class = "row">
+								  <div class = "col-md-6 col-sm-6 col-xs-5 text-heading">Concentration: </div>
+								  <div class = "col-md-6 col-sm-6 col-xs-7" id = "gconc"></div>
+							   </div><br>
+							   <div class = "row">
+								  <div class = "col-md-6 col-sm-6 col-xs-5 text-heading">Year: </div>
+								  <div class = "col-md-6 col-sm-6 col-xs-7" id = "gyear"></div>
+							   </div><br>
+						    </div>
+					     </div>
+					</div>
+				 </div>
+
+				 <!-- College -->
+				 <div class = "panel panel-success" id = "college">
+					<div class = "panel-heading">College</div><br>
+					<div class = "panel-body">
+					     <div class = "row">
+						    <div class = "col-md-6 col-sm-12 col-xs-12">
+							   <div class = "row">
+								  <div class = "col-md-6 col-sm-6 col-xs-5 text-heading">Name: </div>
+								  <div class = "col-md-6 col-sm-6 col-xs-7" id = "cname"></div>
+							   </div><br>
+						    </div>
+						    <div class = "col-md-6 col-sm-12 col-xs-12">
+							   <div class = "row">
+								  <div class = "col-md-6 col-sm-6 col-xs-5 text-heading">Concentration: </div>
+								  <div class = "col-md-6 col-sm-6 col-xs-7" id = "cconc"></div>
+							   </div><br>
+						    </div>
+					     </div>
+					</div>
+				 </div>
+
+				 <!-- High School -->
+				 <div class = "panel panel-success" id = "school">
+					<div class = "panel-heading">High School</div><br>
+					<div class = "panel-body">
+					     <div class = "row">
+						    <div class = "col-md-6 col-sm-6 col-xs-5 text-heading">Name: </div>
+						    <div class = "col-md-6 col-sm-6 col-xs-7" id = "sname"></div>
+					     </div>
+					</div>
+				 </div>
+		   </div>
+	    </section>
+     </div>
+
+     <!-- jQuery library -->
+     <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+     <!-- Latest compiled JavaScript -->
+     <script src = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+     <!-- Custom Jquery -->
+     <script src = "fbdetails.js"></script>
+
+</body>
+</html>
